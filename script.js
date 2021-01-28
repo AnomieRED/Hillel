@@ -21,9 +21,16 @@ function div(a, b) {
    return mathCalc;
 };
 
-function mathOperation(a, b, operation) {
-   return operation(a, b);
-};
+// function mathOperation(a, b, operation) {
+//    return operation(a, b);
+// };
+
+// const mathCalc = `Calculations are finished!
+// Sum: ${frsNumber} + ${scdNumber} = ${mathOperation(frsNumber, scdNumber, sum)}
+// Diff: ${frsNumber} - ${scdNumber} = ${mathOperation(frsNumber, scdNumber, diff)}
+// Mult: ${frsNumber} * ${scdNumber} = ${mathOperation(frsNumber, scdNumber, mult)}
+// Div: ${frsNumber} / ${scdNumber} = ${mathOperation(frsNumber, scdNumber, div)}
+// `;
 
 const mathCalc = `Calculations are finished!
 Sum: ${frsNumber} + ${scdNumber} = ${sum(frsNumber, scdNumber)}
@@ -37,3 +44,4 @@ console.log(mathCalc);
 
 //Alert
 alert(mathCalc);
+
