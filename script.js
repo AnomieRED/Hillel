@@ -37,4 +37,3 @@ console.log(mathCalc);
 
 //Alert
 alert(mathCalc);
-
