@@ -33,5 +33,5 @@ Mult: ${frsNumber} * ${scdNumber} = ${multResult}
 Div: ${frsNumber} / ${scdNumber} = ${divResult}
 `;
 
-alert(calcOper)
-console.log(calcOper)
+alert(calcOper);
+console.log(calcOper);
