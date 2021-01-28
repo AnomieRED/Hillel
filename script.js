@@ -26,10 +26,10 @@ function mathOperation(a, b, operation) {
 };
 
 const mathCalc = `Calculations are finished!
-Sum: ${frsNumber} + ${scdNumber} = ${mathOperation(frsNumber, scdNumber, sum)}
-Diff: ${frsNumber} - ${scdNumber} = ${mathOperation(frsNumber, scdNumber, diff)}
-Mult: ${frsNumber} * ${scdNumber} = ${mathOperation(frsNumber, scdNumber, mult)}
-Div: ${frsNumber} / ${scdNumber} = ${mathOperation(frsNumber, scdNumber, div)}
+Sum: ${frsNumber} + ${scdNumber} = ${sum(frsNumber, scdNumber)}
+Diff: ${frsNumber} - ${scdNumber} = ${diff(frsNumber, scdNumber)}
+Mult: ${frsNumber} * ${scdNumber} = ${mult(frsNumber, scdNumber)}
+Div: ${frsNumber} / ${scdNumber} = ${div(frsNumber, scdNumber)}
 `;
 
 //Console
