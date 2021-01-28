@@ -2,36 +2,39 @@ const frsNumber = +prompt("Please, enter one number", "");
 const scdNumber = +prompt("Please, enter second number", "");
 
 function sum(a, b) {
-   const mathOper = a + b;
-   return mathOper;
-}
+   const mathCalc = a + b;
+   return mathCalc;
+};
 
 function diff(a, b) {
-   const mathOper = a - b;
-   return mathOper;
-}
+   const mathCalc = a - b;
+   return mathCalc;
+};
 
 function mult(a, b) {
-   const mathOper = a * b;
-   return mathOper;
-}
+   const mathCalc = a * b;
+   return mathCalc;
+};
 
 function div(a, b) {
-   const mathOper = a / b;
-   return mathOper;
-}
+   const mathCalc = a / b;
+   return mathCalc;
+};
 
-const sumResult = sum(frsNumber, scdNumber);
-const diffResult = diff(frsNumber, scdNumber);
-const multResult = mult(frsNumber, scdNumber);
-const divResult = div(frsNumber, scdNumber);
+function mathOperation(a, b, operation) {
+   return operation(a, b);
+};
 
-const calcOper = `Calculations are finished!
-Sum: ${frsNumber} + ${scdNumber} = ${sumResult}
-Diff: ${frsNumber} - ${scdNumber} = ${diffResult}
-Mult: ${frsNumber} * ${scdNumber} = ${multResult}
-Div: ${frsNumber} / ${scdNumber} = ${divResult}
+const mathCalc = `Calculations are finished!
+Sum: ${frsNumber} + ${scdNumber} = ${mathOperation(frsNumber, scdNumber, sum)}
+Diff: ${frsNumber} - ${scdNumber} = ${mathOperation(frsNumber, scdNumber, diff)}
+Mult: ${frsNumber} * ${scdNumber} = ${mathOperation(frsNumber, scdNumber, mult)}
+Div: ${frsNumber} / ${scdNumber} = ${mathOperation(frsNumber, scdNumber, div)}
 `;
 
-alert(calcOper);
-console.log(calcOper);
+//Console
+console.log(mathCalc);
+
+//Alert
+alert(mathCalc);
+
